@@ -5,7 +5,7 @@ const Container = styled.main`
 `;
 
 const Title = styled.h1`
-  width: 60%;
+  width: 70%;
   font-size: 5rem;
   line-height: 5.5rem;
 `;
