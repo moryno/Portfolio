@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const Container = styled.main`
-  flex: 0.5;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SocialIcon = styled.section`
@@ -11,7 +14,6 @@ const SocialIcon = styled.section`
   justify-content: center;
   position: fixed;
   bottom: 0;
-  right: 0;
 `;
 
 const Email = styled.a`

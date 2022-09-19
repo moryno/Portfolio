@@ -2,7 +2,10 @@ import { Instagram, LinkedIn, Reddit, Twitter } from "@material-ui/icons";
 import styled from "styled-components";
 
 const Container = styled.main`
-  flex: 0.5;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SocialIcon = styled.section`
@@ -12,7 +15,6 @@ const SocialIcon = styled.section`
   justify-content: center;
   position: fixed;
   bottom: 0;
-  left: 0;
 `;
 
 const Vertical = styled.div`

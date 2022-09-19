@@ -1,19 +1,28 @@
 import styled from "styled-components";
 
 const Container = styled.main`
-  flex: 3;
+  width: 50vw;
+  margin: auto;
+  height: 90vh;
 `;
 
 const Title = styled.h1`
-  width: 70%;
   font-size: 5rem;
   line-height: 5.5rem;
+  padding-bottom: 1rem;
+`;
+
+const Introduction = styled.h2`
+  margin-top: 20vh;
+  font-size: 1.875rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
 `;
 
 const SubTittle = styled.h1`
-  width: 70%;
   font-size: 5rem;
   line-height: 4.5rem;
+  padding-bottom: 1rem;
 `;
 
 const Description = styled.p`
@@ -26,6 +35,7 @@ const Description = styled.p`
 const Intro = () => {
   return (
     <Container>
+      <Introduction>Hello, my name is</Introduction>
       <Title>Maurice Nganga.</Title>
       <SubTittle>I build for Web.</SubTittle>
       <Description>

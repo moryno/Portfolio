@@ -5,6 +5,7 @@ import RightSideBar from "../components/RightSideBar";
 
 const Container = styled.main`
   display: flex;
+  width: 100%;
 `;
 
 const Home = () => {
