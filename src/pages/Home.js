@@ -1,19 +1,16 @@
 import styled from "styled-components";
+import { About } from "../components/About";
 import Intro from "../components/Intro";
-import LeftSideBar from "../components/LeftSideBar";
-import RightSideBar from "../components/RightSideBar";
 
 const Container = styled.main`
-  display: flex;
   width: 100%;
 `;
 
 const Home = () => {
   return (
     <Container>
-      <LeftSideBar />
       <Intro />
-      <RightSideBar />
+      <About />
     </Container>
   );
 };

@@ -1,13 +1,27 @@
+import styled from "styled-components";
 import Home from "../pages/Home";
-import Intro from "./Intro";
 import TopBar from "./TopBar";
+import LeftSideBar from "./LeftSideBar";
+import RightSideBar from "./RightSideBar";
+
+const Container = styled.main`
+  width: 100%;
+`;
+const Wrapper = styled.article`
+  display: flex;
+  width: 100%;
+`;
 
 function App() {
   return (
-    <div>
+    <Container>
       <TopBar />
-      <Home />
-    </div>
+      <Wrapper>
+        <LeftSideBar />
+        <Home />
+        <RightSideBar />
+      </Wrapper>
+    </Container>
   );
 }
 

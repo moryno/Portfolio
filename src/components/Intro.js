@@ -4,6 +4,9 @@ const Container = styled.main`
   width: 50vw;
   margin: auto;
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -13,7 +16,6 @@ const Title = styled.h1`
 `;
 
 const Introduction = styled.h2`
-  margin-top: 20vh;
   font-size: 1.875rem;
   font-weight: 300;
   padding-bottom: 1rem;
