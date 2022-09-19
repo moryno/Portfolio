@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Intro from "../components/Intro";
+import LeftSideBar from "../components/LeftSideBar";
 import RightSideBar from "../components/RightSideBar";
 
 const Container = styled.main`
@@ -9,8 +10,9 @@ const Container = styled.main`
 const Home = () => {
   return (
     <Container>
-      <RightSideBar />
+      <LeftSideBar />
       <Intro />
+      <RightSideBar />
     </Container>
   );
 };
