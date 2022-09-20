@@ -5,6 +5,8 @@ const Container = styled.div`
   height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: auto;
 `;
 
@@ -16,11 +18,12 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  height: auto;
 `;
 
 const ImageContainer = styled.article`
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -44,40 +47,60 @@ const Right = styled.div`
 
 const Title = styled.h1`
   font-weight: 400;
+  align-self: flex-start;
+  margin-bottom: 2rem;
 `;
 
 const Subtitle = styled.p`
-  margin: 20px 0;
+  margin-bottom: 1rem;
 `;
 
 const Description = styled.p`
   font-weight: 300;
+  margin-bottom: 1rem;
+`;
+
+const TechnologyWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Technology = styled.span`
+  width: 50%;
+  margin-bottom: 0.3rem;
 `;
 
 export const About = () => {
   return (
     <Container>
+      <Title>About Me</Title>
+
       <Wrapper>
         <Left>
-          <Title>About Me</Title>
           <Subtitle>
-            It is a long established fact that a reader will be distracted by
-            the readable content.
+            Hello! My name is Maurice, I create amazing solutions for Web
+            applications.
           </Subtitle>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            volutpat vulputate purus vitae placerat. Mauris aliquam mattis arcu
-            at malesuada. Vestibulum blandit urna felis, pellentesque blandit
-            nibh pretium non. Vestibulum venenatis volutpat facilisis. Donec
-            quis lacus gravida, condimentum mi eget, ultrices enim. Ut rutrum in
-            est sit amet ornare. Nullam ornare, dui a vestibulum ultrices, justo
-            mauris ultrices erat, et pulvinar quam mi sit amet elit. Quisque
-            arcu tortor, feugiat eget tellus vel, viverra pulvinar purus. Etiam
-            nec turpis odio. Duis ultrices dui a sem porta euismod. Nulla a
-            eleifend metus, at pretium est. In sodales auctor accumsan. Nulla
-            facilisi. Ut sit amet ultrices est, sed pulvinar velit. Integer
-            consectetur quis ipsum at luctus.
+            I am a self-taught developer based in Nairobi Kenya, but to perfect
+            my craft I attended several code jams. Also attended Moringa School
+            to perfect my JavaScript & Web development skills.
           </Description>
+          <Description>
+            Here are a few technologies I have been working with recently:
+          </Description>
+          <TechnologyWrapper>
+            <Technology>HTML</Technology>
+            <Technology>CSS</Technology>
+            <Technology>JavaScript (ES6+)</Technology>
+            <Technology>React</Technology>
+            <Technology>Node.js</Technology>
+            <Technology>MongoDB</Technology>
+            <Technology>MySQL</Technology>
+            <Technology>Ruby</Technology>
+            <Technology>Ruby on Rails</Technology>
+          </TechnologyWrapper>
         </Left>
         <Right>
           <ImageContainer>
