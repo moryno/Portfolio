@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { About } from "../components/About";
 import Intro from "../components/Intro";
+import { ProductList } from "../components/ProductList";
 
 const Container = styled.main`
   width: 100%;
@@ -11,6 +12,7 @@ const Home = () => {
     <Container>
       <Intro />
       <About />
+      <ProductList />
     </Container>
   );
 };
