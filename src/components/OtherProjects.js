@@ -11,9 +11,13 @@ const Container = styled.main`
   text-align: center;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  margin-bottom: 1.5rem;
+`;
 
-const SubTitle = styled.span``;
+const SubTitle = styled.span`
+  margin-bottom: 1.5rem;
+`;
 
 const Wrapper = styled.section`
   display: flex;
@@ -26,7 +30,7 @@ const OtherProjects = () => {
   return (
     <Container>
       <Title>Other Noteworthy Projects</Title>
-      <SubTitle>view the archive</SubTitle>
+      <SubTitle>View the archive</SubTitle>
       <Wrapper>
         <OtherProject />
         <OtherProject />

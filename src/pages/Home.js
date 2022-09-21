@@ -3,6 +3,7 @@ import { About } from "../components/About";
 import Intro from "../components/Intro";
 import OtherProjects from "../components/OtherProjects";
 import { ProductList } from "../components/ProductList";
+import Archive from "./Archive";
 
 const Container = styled.main`
   width: 100%;
@@ -11,10 +12,11 @@ const Container = styled.main`
 const Home = () => {
   return (
     <Container>
-      <Intro />
+      {/* <Intro />
       <About />
       <ProductList />
-      <OtherProjects />
+      <OtherProjects /> */}
+      <Archive />
     </Container>
   );
 };
